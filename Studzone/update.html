@@ -1,0 +1,182 @@
+
+			    	<!--<li class="active"><a href="home.html">Home</a></li>
+			    	<li><a href="view.html">Student Profile</a></li>
+			    	<li><a href="add.html">Add Student</a></li>
+			    	<li><a href="update.html">Edit Profile</a></li>-->
+<html>
+<head>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-submenu.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css1/line.css">
+	</head>
+<body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script>
+function valid() {
+var rn=document.getElementById('rno').value;
+var organization = '{"members":[' +
+'{"name":"ranjith","rno":"14mx32","sex":"Male","dob":"09/06/1993","place":"madurai","phone":"9629199379","email":"ranjith@gmail.com","fname":"Vijayakumar","lan":"Tamil,English","qua":"MCA","img":"pic/ig-3.jpg"},' +
+'{"name":"vivek","rno":"14mx55","sex":"Male","dob":"23/03/1994","place":"kumbakonam","phone":"9092915941","email":"vivek@gmail.com","fname":"raju","lan":"Tamil,English,Hindi,telugu","qua":"MCA","img":"images/2page-img3.jpg"},' +
+'{"name":"shiva","rno":"14mx36","sex":"Male","dob":"30/07/1994","place":"kadalur","phone":"9894072330","email":"shiva@gmail.com","fname":"pachayappan","lan":"Tamil,English,Malayalam","qua":"MCA","img":"images/2page-img2.jpg"}]}';
+obj = JSON.parse(organization); 
+if(rn!=""){
+  var i;
+       for(i=0;i<obj.members.length;i++)
+       {	
+         if(obj.members[i].rno == rn)
+        {
+         var nam=obj.members[i].name;
+         var rn=obj.members[i].rno;
+         var se=obj.members[i].sex;
+         var db=obj.members[i].dob;
+         var fnam=obj.members[i].fname;
+         var plac=obj.members[i].place;
+         var phon=obj.members[i].phone;
+         var qu=obj.members[i].qua;
+         var la=obj.members[i].lan;
+          var img=obj.members[i].img;
+        document.write("<link rel='stylesheet' href='css/bootstrap.min.css'>");
+        document.write("<link rel='stylesheet' href='css/bootstrap-submenu.min.css'>");
+        document.write("<link rel='stylesheet' href='css1/line.css'>");
+       document.write("<body style='background-color:skyblue;'><div style='float:left'><img src='PSG.png' style='height: 120px; width: 149px; padding: 10px;''></img></div><div style='margin-left:250px; width:70%'><table><tr><td><img src='psgtechlogo.jpg' style='height:120px; width:100px; margin-right:20px; padding:5px;'></td><td><table><tr><h1>PSG College of Technology, Coimbatore - 641 004</h1></tr><tr><i><h3>AICTE Approved - Govt. Aided Autonomous Institution - Affiliated to Anna University, Chennai - ISO 9001:2008 certified</i></h3></tr></table></td></tr></table></div><div class='container'><hr style='border-color:black;'></div>");
+       document.write("<style>.nav-bottombar>li{float:left}	.nav-bottombar>li>a{border-radius:20px}	.nav-bottombar>li+li{margin-left:30px}	.nav-bottombar>li.active>a,.nav-bottombar>li.active>a:focus,.nav-bottombar>li.active>a:hover{color:black;background-color:transparent;border: 2px solid black; border-top: none;border-right: none;border-left: none;</style><div style='margin-left: 400px;font-size: 1.5em;'><ul class='nav nav-bottombar' role='tablist'><li><a href='home.html'>Home</a></li><li><a href='view.html'>Student Profile</a></li><li  ><a href='add.html'>Add Student</a></li><li class='active'><a href='update.html'>Edit Profile</a></li></ul></div></body>");
+       
+       document.write("<div class='container'><hr style='border-color:black;'><div style='margin-left:500px; width:70%'><label>Name:</label><label>"+nam+"</label><br><label>Roll Number:</label><label>"+rn+"</label><br><label>Sex:</label><label>"+se+"</label><br><label>DateofBirth:</label><label>"+db+"</label><br><label>Father Name:</label><label>"+fnam+"</label><br><label>Place:</label><label>"+plac+"</label><br><label>Phone Number:</label><label>"+phon+"</label><br><label>Qualification:</label><label>"+qu+"</label><br><label>Language:</label><label>"+la+"</label><br><button class='btn-default'><a href='update.html'>Update</a></button>               <button class='btn-default'><a href='update.html'>Delete</a></button></div></div>"); 
+       }  
+     }
+}  
+else
+    alert("Invaid login");
+}
+
+</script>
+
+<style type="text/css">
+body{
+	background-color: skyblue;
+}
+	.lg-container{
+	width:300px;
+	margin:20px auto;
+	padding:20px 40px;
+	border:1px solid #f4f4f4;
+	background:rgba(255,255,255,.5);
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	
+	-webkit-box-shadow: 0 0 2px #aaa;
+	-moz-box-shadow: 0 0 2px #aaa;
+	box-shadow: 0 0 2px #aaa;
+}
+
+.lg-container1{
+	width:800px;
+	margin:20px auto;
+	padding:20px 40px;
+	border:1px solid #f4f4f4;
+	background:rgba(255,255,255,.5);
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	
+	-webkit-box-shadow: 0 0 2px #aaa;
+	-moz-box-shadow: 0 0 2px #aaa;
+	box-shadow: 0 0 2px #aaa;
+}
+
+
+.lg-container h1{
+	font-size:40px;
+	text-align:center;
+}
+#lg-form > div {
+	margin:10px 5px;
+	padding:5px 0;
+}
+#lg-form label{
+	display: none;
+	font-size: 20px;
+	line-height: 25px;
+}
+#lg-form input[type="text"],
+#lg-form input[type="password"],
+#lg-form input[type="email"],
+#lg-form input[type="date"],
+#lg-form input[type="number"]{
+	border:1px solid rgba(51,51,51,.5);
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 20px;
+	width: 100%;
+	font-family: 'Times New Roman', cursive;
+	text-align:center;
+}
+.btn-default{
+	border-radius: 10%;
+
+}
+.row-justified{
+	margin-left: 400px;
+}
+.shiva{
+	margin-left: 300px;
+	font-size: 1.5em;
+}
+
+.nav-bottombar>li{float:left}
+	.nav-bottombar>li>a{border-radius:20px}
+	.nav-bottombar>li+li{margin-left:30px}
+	.nav-bottombar>li.active>a,.nav-bottombar>li.active>a:focus,.nav-bottombar>li.active>a:hover{color:black;background-color:transparent;border: 2px solid black; border-top: none;border-right: none;border-left: none;
+
+</style>
+<div>
+	<div style="float:left"><img src="PSG.png" style="height: 120px; width: 149px; padding: 10px;"></img></div>
+	<div style="margin-left:250px; width:70%"><table><tr><td><img src="psgtechlogo.jpg" style="height:120px; width:100px; margin-right:20px; padding:5px;"></td><td><table><tr><h1>PSG College of Technology, Coimbatore - 641 004</h1></tr><tr><i><h3>AICTE Approved - Govt. Aided Autonomous Institution - Affiliated to Anna University, Chennai - ISO 9001:2008 certified</i></h3></tr></table></td></tr></table></div>
+	
+</div>
+
+
+<div class="container">
+<hr style="border-color:black;">
+<div class="shiva">
+    <ul class="nav nav-bottombar" role="tablist">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="view.html">Student Profile</a></li>
+    <li><a href="add.html">Add Student</a></li>
+    <li  class="active"><a href="update.html">Edit Profile</a></li>
+  </ul>
+</div>
+<hr style="border-color:black;">
+<br>	
+<div class="container">
+    
+    <br><br>
+      
+     <div class="row-justified">
+     	<div class="col-md-8">
+     	
+              <label>Roll No:</label>
+              <div class="input-group">
+              <input id="rno" class="form-control" placeholder="Enter roll number" type="text">
+            
+            <span class="input-group-btn">
+               <button class="btn btn-success" type="button" onclick="valid()">Search<span class="glyphicon glyphicon-search"></span></button>
+      </span></div>
+            </div>
+        
+     </div>
+     </div>
+        
+        
+    
+  </div>
+
+
+</div>
+</body>
+</html>

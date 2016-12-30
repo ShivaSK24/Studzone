@@ -1,0 +1,98 @@
+<style>
+   body{
+        background: #333333;
+    }
+	.text-size{
+		text-align:center;
+        background-color: transparent;
+        color: black;
+        outline: none;
+        outline-style: none;
+        outline-offset: 0;
+        border-top: solid black 1px;
+        border-left: solid black 1px;
+        border-right: solid black 1px;
+        border-bottom: solid black 1px;
+        padding: 10px 0px;
+		width:110px;
+		height:30px;
+		
+	}
+
+.lg-container{
+	width:275px;
+	margin:100px auto;
+	padding:20px 40px;
+	border:1px solid #f4f4f4;
+	background:rgba(255,255,255,.5);
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	
+	-webkit-box-shadow: 0 0 2px #aaa;
+	-moz-box-shadow: 0 0 2px #aaa;
+	box-shadow: 0 0 2px #aaa;
+}
+	
+    .text-line {
+        background-color: transparent;
+        color: black;
+        outline: none;
+        outline-style: none;
+        outline-offset: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid black 1px;
+        padding: 10px 0px;
+    }
+.ltable{
+	border-collapse:collapse;
+	
+}
+	.text-line-size{
+		text-align:center;
+        background-color: transparent;
+        color: black;
+        outline: none;
+        outline-style: none;
+        outline-offset: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid black 1px;
+        padding: 10px 0px;		
+		width:110px;
+		height:20px;
+
+	}
+		
+	
+	.card-left{
+	padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 310px;
+  background: white;
+  
+	}
+.aa{
+	padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 300px;
+	background: navyblue;  
+	}
+.leave{
+	    border-width:3px;
+		border-color:#000000;
+		border-style:dotted;
+}
+	
+	.card-right{
+		background: white;
+		margin: 10 320px;
+	}
+
+
+</style>
